@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react';
 import styles from './App.module.scss';
 import Header from '../Header/Header';
 import { useTypingEffect } from '../../utils/WriteFunc/writeWords';
-import { words } from '../../utils/WriteFunc/words';
+import { words } from '../../utils/WriteFunc/wordsMain';
 import ContractFiled from '../SmartContractFiled/ContractField';
 import Features from '../Features/Features';
+import TokenInfo from '../Token/TokenInfo';
+
 
 function App() { 
 
@@ -24,9 +26,11 @@ function App() {
         </h1>
       </div>
       <ContractFiled />
-      <Features />
 
-      <ContractFiled />
+      <TokenInfo />
+      <Features />
+      
+
     </>
   );
 }
