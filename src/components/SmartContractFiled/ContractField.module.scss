@@ -1,0 +1,111 @@
+.smcFieldContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #161608;
+    width: 85vw; 
+    max-width: 680px;
+    margin: 0 auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 16px;
+    margin-top: 3.1%;
+  
+    h1 {
+      margin: 0;
+      margin-bottom: 5px;
+      font-size: clamp(18px, 4vw, 28px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 5px;
+      flex-wrap: wrap;
+  
+      .field {
+        padding: 0 7px;
+        width: 55vh;
+        max-width: 60vw;
+        text-align: center;
+        font-size: clamp(11px, 3vw, 20px); 
+        pointer-events: none;
+        background: #131306;
+        border: 2px solid #b3a316;
+        border-radius: 10px;
+        height: 4vh;
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+      }
+  
+      button {
+        height: 4.5vh;
+        width: 40px;
+        background: rgb(19, 19, 6);
+        border: 2px solid #b3a316;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+  
+        img {
+          width: 20px; 
+          height: 20px;
+        }
+      }
+    }
+
+    @media (max-width: 932px) and (max-height: 430px) and (orientation: landscape) {
+        .container {
+          .field {
+            height: 8vh; 
+            
+            font-size: clamp(12px, 3.5vw, 22px);
+          }
+    
+          button {
+            height: 10vh;
+            width: 45px;
+          }
+        }
+      }
+  
+    @media (max-width: 768px) {
+      width: 90vw;
+      max-width: 500px;
+      padding: 8px;
+  
+      h1 {
+        font-size: 18px;
+      }
+  
+      .container {
+        gap: 3px;
+
+        .field {
+          width: 60vw;
+          font-size: 18px;
+        }
+  
+        button {
+          width: 45px;
+          height: 4.5vh;
+  
+          img {
+            width: 24px; 
+            height: 24px;
+          }
+        }
+      }
+    }
+}
+
+    

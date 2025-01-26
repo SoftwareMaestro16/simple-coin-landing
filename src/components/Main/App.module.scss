@@ -1,0 +1,82 @@
+#root {
+  margin: 0 auto;
+}
+
+* {
+  font-family: 'Inter', system-ui;
+  color: white;
+}
+
+.mainTextContainer {
+  width: 80vw;
+  max-width: clamp(1000px, 7vw, 1000px);
+  margin: 3vh auto; 
+  margin-top: 3%;
+  text-align: left; 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal; 
+
+  @media (max-width: 768px) {
+    margin-top: 3px;
+    margin-left: 4%;
+    margin-right: 0;
+
+  }
+}
+
+.gradientTextMain {
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: clamp(25px, 5vw, 48px);
+}
+
+.defaultText {
+  white-space: pre-line; 
+  font-size: clamp(24px, 5vw, 42px); 
+}
+
+.gradientText {
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: clamp(24px, 5vw, 44px);
+}
+
+.cursor {
+  display: inline-block;
+  font-weight: bold;
+  animation: blink 1s infinite;
+  font-size: clamp(21px, 5vw, 40px); 
+
+}
+
+@keyframes blink {
+  0%, 100% {
+    color: white; 
+  }
+  50% {
+    color: black;
+  }
+}
+
+@media (max-width: 932px) and (max-height: 430px) and (orientation: landscape) {
+  .gradientTextMain {
+    font-size: calc(clamp(23px, 5vw, 48px) - 8px);
+  }
+
+  .defaultText {
+    font-size: calc(clamp(22px, 5vw, 42px) - 8px);
+  }
+
+  .gradientText {
+    font-size: calc(clamp(23px, 5vw, 44px) - 8px);
+  }
+
+  .cursor {
+    font-size: calc(clamp(21px, 5vw, 40px) - 8px);
+  }
+}
