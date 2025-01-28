@@ -6,7 +6,7 @@ import { words } from '../../utils/WriteFunc/wordsMain';
 import ContractFiled from '../SmartContractFiled/ContractField';
 import Features from '../Features/Features';
 import TokenInfo from '../Token/TokenInfo';
-
+import Nft from '../Nft/Nft';
 
 function App() { 
 
@@ -29,7 +29,7 @@ function App() {
 
       <TokenInfo />
       <Features />
-      
+      <Nft />
 
     </>
   );

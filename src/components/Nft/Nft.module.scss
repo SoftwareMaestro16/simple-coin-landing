@@ -1,0 +1,121 @@
+.nftDescription {
+    padding: 1vh 2vw;
+    background: linear-gradient(50deg, #000000, #3d3d3f);
+    color: #f3f3f3;
+    text-align: center;
+
+    h1 {
+        font-size: clamp(32px, 5vw, 48px);
+        margin-bottom: 25px;
+        color: #e0b509;
+    }
+
+    .sections {
+        display: flex;
+        margin: 0 auto; 
+        flex-direction: column;
+        gap: 20px;        max-width: 1200px;
+
+        .section {
+            background: linear-gradient(350deg, #111111, #262624);
+            padding: 20px;
+            border-radius: 12px;
+            border:1px solid #e0b509;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: left;
+
+            h2 {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: clamp(22px, 4vw, 28px);
+                margin-bottom: 10px;
+                color: #d2830d;
+
+                img {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+
+            p {
+                font-size: clamp(16px, 2.5vw, 18px);
+                line-height: 1.5;
+                margin-bottom: 10px;
+            }
+
+            .formula {
+                display: inline-block; /* Делаем формулу встроенной */
+                background: rgba(224, 181, 9, 0.2); /* Светло-золотистый полупрозрачный фон */
+                border: 1px solid #e0b509; /* Уменьшаем толщину границы */
+                border-radius: 6px; /* Легкие закругления углов */
+                padding: 2px 6px; /* Внутренние отступы для текста */
+                font-size: 16px; /* Размер текста (можно адаптировать) */
+                font-weight: bold; /* Жирный шрифт */
+                color: #e0b509; /* Золотистый цвет текста */
+                line-height: 1.2; /* Выравнивание по линии текста */
+                
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            
+                li {
+                    margin-bottom: 10px;
+                    font-size: clamp(16px, 2.5vw, 18px);
+                    position: relative; 
+                    padding-left: 40px; 
+            
+                    &::before {
+                        content: '';
+                        position: absolute; 
+                        left: 7px;
+                        top: 3px;
+                        width: 23px;
+                        height: 23px;
+                        background: url('/verify.png') no-repeat center;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.buttonContainer {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.purchaseButton {
+    display: inline-block; 
+    text-align: center; 
+    background: linear-gradient(90deg, #e0b509, #d2830d); 
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px; 
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+
+    width: 18vw; 
+    min-width: 240px;
+    max-width: 100%;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+        transform: scale(1); 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    }
+}
+

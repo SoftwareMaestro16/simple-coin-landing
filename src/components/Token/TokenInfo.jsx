@@ -21,7 +21,8 @@ function TokenInfo() {
     }, []);
 
     return (
-        <div className={styles.main}>
+        <>
+         <div className={styles.main}>
             <h1>Jetton Blockchain Statistics</h1>
             <div className={styles.statsContainer}>
                 {tokenStats.map((stat, index) => (
@@ -36,7 +37,51 @@ function TokenInfo() {
                     </div>
                 ))}
             </div>
+            <div className={styles.buttonContainer}>
+                <a
+                    href="https://www.geckoterminal.com/ru/ton/pools/EQCfCyLLCOq_bw_Ge1C1pMlSo7dqFUVSsmNKP4osxoxTxCZo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.purchaseButton}
+                >
+                    <img
+                        src="/geckoterminal.png"
+                        alt="GeckoTerminal"
+                        className={styles.icon}
+                    />
+                    GeckoTerminal
+                </a>
+                <a
+                    href="https://dedust.io/swap/TON/EQB9QBqniFI0jOmw3PU6v1v4LU3Sivm9yPXDDB9Qf7cXTDft"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.purchaseButton}
+                >
+                    <img
+                        src="/dedust.png"
+                        alt="DeDust"
+                        className={styles.icon}
+                    />
+                    DeDust
+                </a>
+                <a
+                    href="https://dexscreener.com/ton/eqcfcyllcoq_bw_ge1c1pmlso7dqfuvssmnkp4osxoxtxczo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.purchaseButton}
+                >
+                    <img
+                        src="/dexscreener.png"
+                        alt="DEX Screener"
+                        className={styles.icon}
+                    />
+                    DEX Screener
+                </a>
+            </div>
         </div>
+
+        </>
+
     );
 }
 
