@@ -11,7 +11,7 @@ function Features() {
                         <div className={styles.imgContainer}>
                             <img src={feature.imgSrc} alt={feature.title} />
                         </div>
-                        <div>
+                        <div className={styles.desc}>
                             <h2>{feature.title}</h2>
                             <p>{feature.description}</p>
                         </div>

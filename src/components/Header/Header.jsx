@@ -34,11 +34,11 @@ function Header() {
                 </h1>
                 <h1>
                     <a
-                    href="https://x.com/SimpleCoin_Move"
+                    href="/whitepaper.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     >
-                    X
+                    Whitepaper
                     </a>
                 </h1>
                 <h1>
