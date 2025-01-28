@@ -31,10 +31,10 @@
   
       .field {
         padding: 0 7px;
-        width: 55vh;
-        max-width: 60vw;
+        width: 65vh;
+        max-width: 70vw;
         text-align: center;
-        font-size: clamp(11px, 3vw, 20px); 
+        font-size: clamp(11px, 2vw, 20px); 
         pointer-events: none;
         background: #131306;
         border: 2px solid #b3a316;
@@ -68,7 +68,8 @@
         .container {
           .field {
             height: 8vh; 
-            
+            width: 60vw;
+            max-width: 80vw;
             font-size: clamp(12px, 3.5vw, 22px);
           }
     
