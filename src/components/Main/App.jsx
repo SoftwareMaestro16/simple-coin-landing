@@ -7,6 +7,7 @@ import ContractFiled from '../SmartContractFiled/ContractField';
 import Features from '../Features/Features';
 import TokenInfo from '../Token/TokenInfo';
 import Nft from '../Nft/Nft';
+import Footer from '../Footer/Footer';
 
 function App() { 
 
@@ -30,6 +31,8 @@ function App() {
       <TokenInfo />
       <Features />
       <Nft />
+      
+      <Footer />
 
     </>
   );
