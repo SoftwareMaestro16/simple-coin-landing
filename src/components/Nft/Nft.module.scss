@@ -3,9 +3,11 @@
     background: linear-gradient(50deg, #000000, #3d3d3f);
     color: #f3f3f3;
     text-align: center;
+    border-top: 2px solid white;
 
     h1 {
-        font-size: clamp(32px, 5vw, 48px);
+        font-size: clamp(32px, 5vw, 46px);
+        margin-top: 30px;
         margin-bottom: 25px;
         color: #e0b509;
     }
@@ -14,13 +16,14 @@
         display: flex;
         margin: 0 auto; 
         flex-direction: column;
-        gap: 20px;        max-width: 1200px;
+        gap: 20px;        
+        max-width: 1200px;
 
         .section {
             background: linear-gradient(350deg, #111111, #262624);
-            padding: 20px;
+            padding: 3px 18px;
             border-radius: 12px;
-            border:1px solid #e0b509;
+            border: 1px solid #e0b509;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             text-align: left;
 
@@ -45,15 +48,15 @@
             }
 
             .formula {
-                display: inline-block; /* Делаем формулу встроенной */
-                background: rgba(224, 181, 9, 0.2); /* Светло-золотистый полупрозрачный фон */
-                border: 1px solid #e0b509; /* Уменьшаем толщину границы */
-                border-radius: 6px; /* Легкие закругления углов */
-                padding: 2px 6px; /* Внутренние отступы для текста */
-                font-size: 16px; /* Размер текста (можно адаптировать) */
-                font-weight: bold; /* Жирный шрифт */
-                color: #e0b509; /* Золотистый цвет текста */
-                line-height: 1.2; /* Выравнивание по линии текста */
+                display: inline-block; 
+                background: rgba(224, 181, 9, 0.2);
+                border: 1px solid #e0b509; 
+                border-radius: 6px;
+                padding: 2px 6px;
+                font-size: 16px; 
+                font-weight: bold;
+                color: #e0b509;
+                line-height: 1.2; 
                 
             }
 

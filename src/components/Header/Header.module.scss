@@ -11,6 +11,7 @@ $second-color: #101114;
     width: 100vw;
     height: 8vh;
     box-sizing: border-box;
+    border-bottom: 2px solid white;
 
     @media (max-width: 932px) and (max-height: 430px) and (orientation: landscape) {
         height: 13vh;
