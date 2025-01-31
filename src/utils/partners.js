@@ -7,4 +7,6 @@ export const partners = [
     { imgSrc: "/auraxcapital.png", link: "https://t.me/AURA_x_CAPITAL" },
     { imgSrc: "/offlab.png", link: "https://t.me/off_lab" },
     { imgSrc: "/griffinston.png", link: "https://t.me/The_TON_io" },
+    { imgSrc: "/2x2.png", link: "https://t.me/twoxpump" },
+
 ];
